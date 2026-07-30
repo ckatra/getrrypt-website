@@ -230,6 +230,126 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.65;
 }
 
+/* ─── Pricing ────────────────────────────────── */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.pricing-card {
+  background: var(--card-bg);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pricing-title {
+  font-family: var(--font-head);
+  font-size: 1.75rem;
+  color: var(--text);
+  letter-spacing: 0.03em;
+}
+
+.pricing-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 1.5rem;
+}
+
+.pricing-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.pricing-option-label {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.pricing-amount {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.pricing-per {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.pricing-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pricing-breakdown-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.pricing-breakdown-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pricing-breakdown-list li {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding-left: 1rem;
+  border-left: 2px solid rgba(0, 212, 255, 0.3);
+}
+
+.pricing-breakdown-sub {
+  display: block;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.35);
+  margin-top: 0.2rem;
+}
+
+.pricing-note {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  line-height: 1.65;
+  flex: 1;
+}
+
+.pricing-policy {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 600;
+}
+
+.pricing-cta {
+  align-self: flex-start;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ─── Testimonials ───────────────────────────── */
 .testimonials-row {
   display: grid;
